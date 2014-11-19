@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style>
+		.red{
+			background-color: red;
+		}
+		.yellow{
+			background-color: yellow;
+		}
+		.grey{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+<h3>Basic Grid</h3>
+	<div class="row">
+		<div class="span8 red"></div>
+		<div class="span4 yellow"></div>
+	</div>
+<h3>Offsetting columns</h3>
+	<div class="row">
+		<div class="span2 red"></div>
+		<div class="span7 offset2 yellow"></div>
+	</div>
+<h3>Nesting Columns</h3>
+	<div class="row">
+		<div class="span9 grey">
+			Level 1 of column
+			<div class="row">
+				<div class="span6 red">Level 2</div>
+				<div class="span3 yellow">Level 3</div>
+			</div>
+		</div>
+	</div>
+<h3>Fluid Grid System</h3>
+<div class="row-fluid">
+    <div class="span4 red"></div>
+    <div class="span8 yellow"></div>
+</div>
+<h3>Offsetting Fluid</h3>
+<div class="row-fluid">
+    <div class="span4 red"></div>
+    <div class="span4 offset2 yellow"></div>
+</div>
+<h3>Nesting Fluid</h3>
+<div class="row-fluid grey">
+    <div class="span12">
+         Level 1 of the columns
+        <div class="row">
+            <div class="span6 yellow">Level 2</div>
+            <div class="span6 red">Level 3</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

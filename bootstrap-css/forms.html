@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+</head>
+<body>
+<div class="container">
+    <h3>Basic Form</h3>
+    <form>
+        <fieldset>
+            <legend>Legend</legend>
+            <label for="name">Label name</label>
+            <input type="text" id="name" placeholder="Type something...">
+            <span class="help-block">Example block-level help text here.</span>
+            <label class="checkbox" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                Check me out
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
+    </form>
+    <h3>Optional Form Layouts</h3>
+    <h4>Search form</h4>
+    <form class="form-search">
+        <input type="text" class="input-medium search-query">
+        <button type="submit" class="btn">Search</button>
+    </form>
+    <h4>Inline form</h4>
+    <form class="form-inline">
+        <input type="text" class="inline-small" placeholder="Email">
+        <input type="password" class="input-small" placeholder="Password">
+        <label class="checkbox">
+            <input type="checkbox"> Remember me
+        </label>
+        <button type="submit" class="btn">Sign in</button>
+    </form>
+    <h4>Horizontal form</h4>
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+                <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+                <input type="password" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox">Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+            </div>
+        </div>
+    </form>
+    <h3>Supported Form Controls</h3>
+    <ul>
+        <li>Inputs</li>
+        <li>Textarea</li>
+        <li>Checkboxes and radio buttons
+            <ul>
+                <li>
+                    <div><label class="checkbox">
+                        <input type="checkbox">
+                        Option one is this and that-be sure to include why it's great
+                    </label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name="radio">Radio A
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name="radio">Radio B
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>Inline checkboxes
+            <div>
+                <label class="checkbox inline">
+                    <input type="checkbox">Checkbox A
+                </label>
+                <label class="checkbox inline">
+                    <input type="checkbox">Checkbox B
+                </label>
+                <label class="checkbox inline">
+                    <input type="checkbox">Checkbox C
+                </label>
+            </div>
+        </li>
+        <li>Selects
+            <ul>
+                <li>Single Select
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </li>
+                <li>Multiple Select
+                    <select multiple="multiple">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Extended Form Controls</h3>
+    <h4>Prepended inputs</h4>
+    <div class="input-prepend">
+        <span class="add-on">@</span>
+        <input class="span2" id="prependedInput" type="text">
+    </div>
+    <h4>Append inputs</h4>
+    <div class="input-append">
+        <input class="span2" id="appendedInput" type="text">
+        <span class="add-on">.00</span>
+    </div>
+    <h4>Append and prepend inputs</h4>
+    <div class="input-prepend input-append">
+        <span class="add-on">$</span>
+        <input class="span2" id="appendedPrependedInput" type="text">
+        <span class="add-on">.00</span>
+    </div>
+    <h4>Attach buttons to inputs</h4>
+    <div class="input-append">
+        <input class="span2" id="appendedInputButton" type="text">
+        <button class="btn" type="button">Search</button>
+        <button class="btn" type="button">Options</button>
+    </div>
+    <h4>Append buttons to search form</h4>
+    <form class="form-search">
+        <div class="input-append">
+            <input type="text" class="span2 search-query">
+            <button type="submit" class="btn">Search</button>
+        </div>
+        <div class="input-prepend">
+            <button type="submit" class="btn">Search</button>
+            <input type="text" class="span2 search-query">
+        </div>
+    </form>
+    <h3>Form Control Sizing</h3>
+    <h4>Block-level input</h4>
+    <input class="input-block-level" type="text" placeholder=".input-block-level">
+    <h4>Relative input controls</h4>
+    <input class="input-mini" type="text" placeholder=".input-mini">
+    <input class="input-small" type="text" placeholder=".input-small">
+    <input class="input-medium" type="text" placeholder=".input-medium">
+    <input class="input-large" type="text" placeholder=".input-large">
+    <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+    <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+    <h4>Grid sizing</h4>
+    <input class="span1" type="text" placeholder=".span1">
+    <input class="span2" type="text" placeholder=".span2">
+    <input class="span3" type="text" placeholder=".span3">
+    <select class="span1">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <select class="span2">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <select class="span3">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <h4>Control row</h4>
+    <div class="controls">
+        <input class="span5" type="text" placeholder=".span5">
+    </div>
+    <div class="controls controls-row">
+        <input class="span4" type="text" placeholder=".span4">
+        <input class="span1" type="text" placeholder=".span1">
+    </div>
+    <h4>Form Actions</h4>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn">Cancel</button>
+    </div>
+    <h4>Help text</h4>
+    <input type="text"><span class="help-inline">Inline help text</span>
+   <br>
+    <input type="text"><span class="help-block"> A long block of help text that breaks onto a new line and may extend beyond one line</span>
+    <h3>Form Control States</h3>
+    <h4>Input focus</h4>
+    <input class="input-xlarge" id="focusedInput" type="text" value="This is focused">
+    <h4>Disabled input</h4>
+    <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here" disabled>
+    <h4>Validation states</h4>
+    <div class="control-group warning">
+        <label class="control-label" for="inputWarning">Input with warning</label>
+        <div class="controls">
+            <input type="text" id="inputWarning">
+            <span class="help-inline">Something may have gone wrong</span>
+        </div>
+     </div>
+    <div class="control-group error">
+        <label class="control-label" for="inputError">Input with error</label>
+        <div class="controls">
+            <input type="text" id="inputError">
+            <span class="help-inline">Please correct the error</span>
+        </div>
+    </div>
+    <div class="control-group info">
+        <label class="control-label" for="inputInfo">Input with info</label>
+        <div class="controls">
+            <input type="text" id="inputInfo">
+            <span class="help-inline">Username is taken</span>
+        </div>
+    </div>
+    <div class="control-group success">
+        <label class="control-label" for="inputSuccess">Input with success</label>
+        <div class="controls">
+            <input type="text" id="inputSuccess">
+            <span class="help-inline">Woohoo!</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
