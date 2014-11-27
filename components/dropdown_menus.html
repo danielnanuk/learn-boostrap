@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menus</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+</head>
+<body>
+<div class="container">
+    <h3>Basic dropdown menu</h3>
+    <ul class="dropdown-menu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;" role="menu"
+        aria-labelledby="dropdownMenu">
+        <li><a tabindex="-1" href="#">Action</a></li>
+        <li><a tabindex="-1" href="#">Another Action</a></li>
+        <li><a tabindex="-1" href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Separated Link</a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <h3>Right-align</h3>
+    <ul class="dropdown-menu pull-right" style="display: block; position: static; margin-bottom: 5px; *width: 180px;" role="menu" aria-labelledby="dLabel">
+        <li><a tabindex="-1" href="#">Action</a></li>
+        <li><a tabindex="-1" href="#">Another Action</a></li>
+        <li><a tabindex="-1" href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Separated Link</a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <h3>Submenu</h3>
+    <ul class="dropdown-menu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;" role="menu" aria-labelledby="dLabel">
+        <li><a tabindex="-1" href="#">Action</a></li>
+        <li><a tabindex="-1" href="#">Another Action</a></li>
+        <li><a tabindex="-1" href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#">Separated Link</a></li>
+        <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">More options</a>
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Option A</a></li>
+                <li><a tabindex="-1" href="#">Option B</a></li>
+                <li><a tabindex="-1" href="#">Option C</a></li>
+                <li><a tabindex="-1" href="#">Option D</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/dropdown.js" type="text/javascript"></script>
+</body>
+</html>

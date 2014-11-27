@@ -33,6 +33,7 @@
 </div>
 <h3>Forms</h3>
 <h4>Default navbar form</h4>
+
 <div class="navbar">
     <div class="navbar-inner">
         <form class="navbar-form pull-left">
@@ -42,6 +43,7 @@
     </div>
 </div>
 <h4>Navbar search input</h4>
+
 <div class="navbar">
     <div class="navbar-inner">
         <form class="navbar-search" accept-charset="utf-8">
@@ -50,13 +52,14 @@
     </div>
 </div>
 <h3>Navbar Menu Variations</h3>
+
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <a class="brand" href="#">Fixed top navbar</a>
         <ul class="nav">
-            <li class="active"><a href="#">Home</a> </li>
-            <li><a href="#">Link</a> </li>
-            <li><a href="#">Link</a> </li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
         </ul>
     </div>
 </div>
@@ -64,9 +67,9 @@
     <div class="navbar-inner">
         <a class="brand" href="#">Fixed bottom navbar</a>
         <ul class="nav">
-            <li class="active"><a href="#">Home</a> </li>
-            <li><a href="#">Link</a> </li>
-            <li><a href="#">Link</a> </li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
         </ul>
     </div>
 </div>
@@ -74,12 +77,41 @@
     <div class="navbar-inner">
         <a class="brand" href="#">Static top navbar</a>
         <ul class="nav">
-            <li class="active"><a href="#">Home</a> </li>
-            <li><a href="#">Link</a> </li>
-            <li><a href="#">Link</a> </li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
         </ul>
     </div>
 </div>
+<h3>Responsive navbar</h3>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <!-- Be sure to leave the brand out there if you want it shown -->
+            <a class="brand" href="#">Project name</a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
 
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/transition.js"></script>
+<script src="../js/collapse.js"></script>
 </body>
 </html>
